@@ -2,8 +2,8 @@
 //  AMContainer.h
 //  NormalProject
 //
-//  Created by 李宁锋 on 2019/3/21.
-//  Copyright © 2019 李宁锋. All rights reserved.
+//  Created by gyh on 2019/3/21.
+//  Copyright © 2019 gyh. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

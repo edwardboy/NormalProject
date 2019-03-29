@@ -2,8 +2,8 @@
 //  AMParam.m
 //  NormalProject
 //
-//  Created by 李宁锋 on 2019/3/21.
-//  Copyright © 2019 李宁锋. All rights reserved.
+//  Created bygyh on 2019/3/21.
+//  Copyright © 2019gyh. All rights reserved.
 //
 
 #import "AMParam.h"

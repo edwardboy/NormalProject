@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A15EC4E2248A38F008C70EC /* AMDataCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */; };
+		4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */; };
+		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
+		4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */; };
+		4A70EB25224E25E20091B161 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 4A70EB24224E25E20091B161 /* File */; };
+		4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB28342245CC9300FCD6E5 /* AViewController.m */; };
+		4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB28372245CCBD00FCD6E5 /* CTMediator+Category.m */; };
 		4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE35492243332600FE54DE /* AppDelegate.m */; };
 		4AEE354D2243332600FE54DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE354C2243332600FE54DE /* ViewController.m */; };
 		4AEE35502243332600FE54DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE354E2243332600FE54DE /* Main.storyboard */; };
@@ -19,6 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A15EC4C2248A38F008C70EC /* AMDataCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterController.h; sourceTree = "<group>"; };
+		4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMDataCenterController.m; sourceTree = "<group>"; };
+		4A15EC502248A455008C70EC /* AMDataCenterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterViewModel.h; sourceTree = "<group>"; };
+		4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMDataCenterViewModel.m; sourceTree = "<group>"; };
+		4A15EC532248A5F3008C70EC /* AMRealtimeDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMRealtimeDataCell.h; sourceTree = "<group>"; };
+		4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRealtimeDataCell.m; sourceTree = "<group>"; };
+		4A15EC562248AA3B008C70EC /* AMPerRealTimeDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPerRealTimeDataCell.h; sourceTree = "<group>"; };
+		4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPerRealTimeDataCell.m; sourceTree = "<group>"; };
+		4A70EB24224E25E20091B161 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		4AEB28332245CC9300FCD6E5 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		4AEB28342245CC9300FCD6E5 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		4AEB28362245CCBD00FCD6E5 /* CTMediator+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Category.h"; sourceTree = "<group>"; };
+		4AEB28372245CCBD00FCD6E5 /* CTMediator+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Category.m"; sourceTree = "<group>"; };
 		4AEE35452243332600FE54DE /* NormalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NormalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEE35482243332600FE54DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AEE35492243332600FE54DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +78,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A15EC482248A34D008C70EC /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4A15EC4F2248A43E008C70EC /* ViewModel */,
+				4A15EC492248A371008C70EC /* Controller */,
+				4A15EC4A2248A371008C70EC /* Model */,
+				4A15EC4B2248A371008C70EC /* View */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		4A15EC492248A371008C70EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A15EC4C2248A38F008C70EC /* AMDataCenterController.h */,
+				4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A15EC4A2248A371008C70EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A15EC4B2248A371008C70EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A15EC532248A5F3008C70EC /* AMRealtimeDataCell.h */,
+				4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */,
+				4A15EC562248AA3B008C70EC /* AMPerRealTimeDataCell.h */,
+				4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A15EC4F2248A43E008C70EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A15EC502248A455008C70EC /* AMDataCenterViewModel.h */,
+				4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4AEB28322245CC4B00FCD6E5 /* CTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB28332245CC9300FCD6E5 /* AViewController.h */,
+				4AEB28342245CC9300FCD6E5 /* AViewController.m */,
+				4AEB28362245CCBD00FCD6E5 /* CTMediator+Category.h */,
+				4AEB28372245CCBD00FCD6E5 /* CTMediator+Category.m */,
+			);
+			path = CTMediator;
+			sourceTree = "<group>";
+		};
 		4AEE353C2243332600FE54DE = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +157,15 @@
 		4AEE35472243332600FE54DE /* NormalProject */ = {
 			isa = PBXGroup;
 			children = (
+				4AEB28322245CC4B00FCD6E5 /* CTMediator */,
 				4AEE35482243332600FE54DE /* AppDelegate.h */,
 				4AEE35492243332600FE54DE /* AppDelegate.m */,
+				4A15EC482248A34D008C70EC /* DataCenter */,
 				4AEE355E2243335900FE54DE /* AMParam.h */,
 				4AEE355F2243335900FE54DE /* AMParam.m */,
 				4AEE3561224365B400FE54DE /* AMContainer.h */,
 				4AEE3562224365B400FE54DE /* AMContainer.m */,
+				4A70EB24224E25E20091B161 /* File */,
 				4AEE354B2243332600FE54DE /* ViewController.h */,
 				4AEE354C2243332600FE54DE /* ViewController.m */,
 				4AEE354E2243332600FE54DE /* Main.storyboard */,
@@ -164,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A70EB25224E25E20091B161 /* File in Resources */,
 				4AEE35552243332900FE54DE /* LaunchScreen.storyboard in Resources */,
 				4AEE35522243332900FE54DE /* Assets.xcassets in Resources */,
 				4AEE35502243332600FE54DE /* Main.storyboard in Resources */,
@@ -226,10 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A15EC4E2248A38F008C70EC /* AMDataCenterController.m in Sources */,
+				4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */,
+				4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */,
 				4AEE354D2243332600FE54DE /* ViewController.m in Sources */,
 				4AEE3563224365B400FE54DE /* AMContainer.m in Sources */,
 				4AEE35582243332900FE54DE /* main.m in Sources */,
+				4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */,
+				4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */,
 				4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */,
+				4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */,
 				4AEE35602243335900FE54DE /* AMParam.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +485,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZ29ULHSK9;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEBUG=0",
+				);
 				INFOPLIST_FILE = NormalProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

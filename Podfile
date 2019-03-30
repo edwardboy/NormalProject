@@ -6,5 +6,7 @@ target 'NormalProject' do
      
      pod 'CTMediator', '~> 25'
      
+     pod 'Masonry', '~> 1.1.0'
+     
 end
 

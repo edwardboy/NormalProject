@@ -12,6 +12,8 @@
 		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
 		4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */; };
 		4A70EB25224E25E20091B161 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 4A70EB24224E25E20091B161 /* File */; };
+		4ADAC24A224F19D600820801 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC249224F19D600820801 /* ListViewController.m */; };
+		4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC24C224F1BD400820801 /* LayoutViewController.m */; };
 		4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB28342245CC9300FCD6E5 /* AViewController.m */; };
 		4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB28372245CCBD00FCD6E5 /* CTMediator+Category.m */; };
 		4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE35492243332600FE54DE /* AppDelegate.m */; };
@@ -35,6 +37,10 @@
 		4A15EC562248AA3B008C70EC /* AMPerRealTimeDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPerRealTimeDataCell.h; sourceTree = "<group>"; };
 		4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPerRealTimeDataCell.m; sourceTree = "<group>"; };
 		4A70EB24224E25E20091B161 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		4ADAC248224F19D600820801 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		4ADAC249224F19D600820801 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		4ADAC24B224F1BD400820801 /* LayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		4ADAC24C224F1BD400820801 /* LayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		4AEB28332245CC9300FCD6E5 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		4AEB28342245CC9300FCD6E5 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
 		4AEB28362245CCBD00FCD6E5 /* CTMediator+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Category.h"; sourceTree = "<group>"; };
@@ -125,6 +131,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4ADAC244224F180E00820801 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				4ADAC24B224F1BD400820801 /* LayoutViewController.h */,
+				4ADAC24C224F1BD400820801 /* LayoutViewController.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		4AEB28322245CC4B00FCD6E5 /* CTMediator */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +172,7 @@
 		4AEE35472243332600FE54DE /* NormalProject */ = {
 			isa = PBXGroup;
 			children = (
+				4ADAC244224F180E00820801 /* Masonry */,
 				4AEB28322245CC4B00FCD6E5 /* CTMediator */,
 				4AEE35482243332600FE54DE /* AppDelegate.h */,
 				4AEE35492243332600FE54DE /* AppDelegate.m */,
@@ -168,6 +184,8 @@
 				4A70EB24224E25E20091B161 /* File */,
 				4AEE354B2243332600FE54DE /* ViewController.h */,
 				4AEE354C2243332600FE54DE /* ViewController.m */,
+				4ADAC248224F19D600820801 /* ListViewController.h */,
+				4ADAC249224F19D600820801 /* ListViewController.m */,
 				4AEE354E2243332600FE54DE /* Main.storyboard */,
 				4AEE35512243332900FE54DE /* Assets.xcassets */,
 				4AEE35532243332900FE54DE /* LaunchScreen.storyboard */,
@@ -265,6 +283,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NormalProject/Pods-NormalProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -272,6 +291,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +330,9 @@
 			files = (
 				4A15EC4E2248A38F008C70EC /* AMDataCenterController.m in Sources */,
 				4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */,
+				4ADAC24A224F19D600820801 /* ListViewController.m in Sources */,
 				4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */,
+				4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */,
 				4AEE354D2243332600FE54DE /* ViewController.m in Sources */,
 				4AEE3563224365B400FE54DE /* AMContainer.m in Sources */,
 				4AEE35582243332900FE54DE /* main.m in Sources */,

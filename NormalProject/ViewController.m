@@ -42,6 +42,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self testAMContainer];
     
     [self testReactiveObjc];
@@ -53,6 +55,7 @@
  */
 - (void)testReactiveObjc{
     
+    CGFloat y = 50;
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = 40.f;
     CGFloat margin = 30;
@@ -60,17 +63,17 @@
     self.userNameTxf = [[UITextField alloc] init];
     self.userNameTxf.borderStyle = UITextBorderStyleRoundedRect;
     self.userNameTxf.placeholder = @"UserName";
-    self.userNameTxf.frame = CGRectMake(margin, margin, width - margin*2, height);
+    self.userNameTxf.frame = CGRectMake(margin, margin+y, width - margin*2, height);
     [self.view addSubview:self.userNameTxf];
     
     self.passwordTxf = [[UITextField alloc] init];
     self.passwordTxf.borderStyle = UITextBorderStyleRoundedRect;
     self.passwordTxf.placeholder = @"Password";
-    self.passwordTxf.frame = CGRectMake(margin, margin+(margin+height), width - margin*2, height);
+    self.passwordTxf.frame = CGRectMake(margin, margin+(margin+height)+y, width - margin*2, height);
     [self.view addSubview:self.passwordTxf];
     
     self.loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.loginBtn.frame = CGRectMake(margin, margin+(margin+height)*2, width - margin*2, height);
+    self.loginBtn.frame = CGRectMake(margin, margin+(margin+height)*2+y, width - margin*2, height);
     [self.loginBtn setBackgroundColor:[UIColor orangeColor]];
     [self.loginBtn setTitle:@"Click" forState:UIControlStateNormal];
     [self.view addSubview:self.loginBtn];

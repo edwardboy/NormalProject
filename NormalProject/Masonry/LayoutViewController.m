@@ -3,7 +3,7 @@
 //  NormalProject
 //
 //  Created by gyh on 2019/3/30.
-//  Copyright © 2019 李宁锋. All rights reserved.
+//  Copyright © 2019 gyh. All rights reserved.
 //
 
 #import "LayoutViewController.h"

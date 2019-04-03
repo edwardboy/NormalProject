@@ -12,6 +12,7 @@
 		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
 		4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */; };
 		4A70EB25224E25E20091B161 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 4A70EB24224E25E20091B161 /* File */; };
+		4ACC9F0E2251FAE100F2F508 /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9F0D2251FAE100F2F508 /* UIView+Color.m */; };
 		4ADAC24A224F19D600820801 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC249224F19D600820801 /* ListViewController.m */; };
 		4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC24C224F1BD400820801 /* LayoutViewController.m */; };
 		4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB28342245CC9300FCD6E5 /* AViewController.m */; };
@@ -37,6 +38,8 @@
 		4A15EC562248AA3B008C70EC /* AMPerRealTimeDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPerRealTimeDataCell.h; sourceTree = "<group>"; };
 		4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPerRealTimeDataCell.m; sourceTree = "<group>"; };
 		4A70EB24224E25E20091B161 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		4ACC9F0C2251FAE100F2F508 /* UIView+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Color.h"; sourceTree = "<group>"; };
+		4ACC9F0D2251FAE100F2F508 /* UIView+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Color.m"; sourceTree = "<group>"; };
 		4ADAC248224F19D600820801 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		4ADAC249224F19D600820801 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		4ADAC24B224F1BD400820801 /* LayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				4ADAC24B224F1BD400820801 /* LayoutViewController.h */,
 				4ADAC24C224F1BD400820801 /* LayoutViewController.m */,
+				4ACC9F0C2251FAE100F2F508 /* UIView+Color.h */,
+				4ACC9F0D2251FAE100F2F508 /* UIView+Color.m */,
 			);
 			path = Masonry;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NormalProject/Pods-NormalProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAChartKit/AAChartKit.framework",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
@@ -290,6 +296,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAChartKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
@@ -332,6 +339,7 @@
 				4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */,
 				4ADAC24A224F19D600820801 /* ListViewController.m in Sources */,
 				4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */,
+				4ACC9F0E2251FAE100F2F508 /* UIView+Color.m in Sources */,
 				4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */,
 				4AEE354D2243332600FE54DE /* ViewController.m in Sources */,
 				4AEE3563224365B400FE54DE /* AMContainer.m in Sources */,

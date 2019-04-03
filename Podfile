@@ -8,5 +8,7 @@ target 'NormalProject' do
      
      pod 'Masonry', '~> 1.1.0'
      
+     pod 'AAChartKit', '~> 2.1.6'
+     
 end
 

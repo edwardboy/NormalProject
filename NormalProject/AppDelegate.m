@@ -21,7 +21,21 @@
     
     [self setupRootViewController];
     
+    [self injection];
+    
     return YES;
+}
+
+- (void)injection{
+#if DEBUG
+    // iOS
+    [[NSBundle bundleWithPath:@"/Applications/InjectionX.app/Contents/Resources/iOSInjection.bundle"] load];
+    // tvOS
+    //    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle"] load];
+    // macOS
+    //    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle"] load];
+#endif
+
 }
 
 - (void)setupRootViewController{

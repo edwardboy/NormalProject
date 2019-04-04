@@ -11,6 +11,9 @@
 		4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */; };
 		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
 		4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */; };
+		4A17B188225598F400B63DDC /* UITextField+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17B187225598F400B63DDC /* UITextField+Emoji.m */; };
+		4A17B18B22559B1B00B63DDC /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17B18A22559B1B00B63DDC /* NSString+Emoji.m */; };
+		4A17B18E2255A10A00B63DDC /* AMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17B18D2255A10A00B63DDC /* AMTextField.m */; };
 		4A18597A2254C07000379447 /* AMTextDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1859782254C07000379447 /* AMTextDelegate.m */; };
 		4A70EB25224E25E20091B161 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 4A70EB24224E25E20091B161 /* File */; };
 		4ACC9F0E2251FAE100F2F508 /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9F0D2251FAE100F2F508 /* UIView+Color.m */; };
@@ -38,6 +41,12 @@
 		4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRealtimeDataCell.m; sourceTree = "<group>"; };
 		4A15EC562248AA3B008C70EC /* AMPerRealTimeDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPerRealTimeDataCell.h; sourceTree = "<group>"; };
 		4A15EC572248AA3B008C70EC /* AMPerRealTimeDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPerRealTimeDataCell.m; sourceTree = "<group>"; };
+		4A17B186225598F400B63DDC /* UITextField+Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Emoji.h"; sourceTree = "<group>"; };
+		4A17B187225598F400B63DDC /* UITextField+Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Emoji.m"; sourceTree = "<group>"; };
+		4A17B18922559B1B00B63DDC /* NSString+Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		4A17B18A22559B1B00B63DDC /* NSString+Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		4A17B18C2255A10A00B63DDC /* AMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMTextField.h; sourceTree = "<group>"; };
+		4A17B18D2255A10A00B63DDC /* AMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMTextField.m; sourceTree = "<group>"; };
 		4A1859782254C07000379447 /* AMTextDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTextDelegate.m; sourceTree = "<group>"; };
 		4A1859792254C07000379447 /* AMTextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTextDelegate.h; sourceTree = "<group>"; };
 		4A70EB24224E25E20091B161 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
@@ -142,6 +151,12 @@
 			children = (
 				4A1859792254C07000379447 /* AMTextDelegate.h */,
 				4A1859782254C07000379447 /* AMTextDelegate.m */,
+				4A17B186225598F400B63DDC /* UITextField+Emoji.h */,
+				4A17B187225598F400B63DDC /* UITextField+Emoji.m */,
+				4A17B18922559B1B00B63DDC /* NSString+Emoji.h */,
+				4A17B18A22559B1B00B63DDC /* NSString+Emoji.m */,
+				4A17B18C2255A10A00B63DDC /* AMTextField.h */,
+				4A17B18D2255A10A00B63DDC /* AMTextField.m */,
 			);
 			path = AMTextDelegate;
 			sourceTree = "<group>";
@@ -301,6 +316,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NormalProject/Pods-NormalProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AAChartKit/AAChartKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
@@ -310,6 +326,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAChartKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
@@ -352,11 +369,14 @@
 				4AEB28352245CC9300FCD6E5 /* AViewController.m in Sources */,
 				4ADAC24A224F19D600820801 /* ListViewController.m in Sources */,
 				4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */,
+				4A17B188225598F400B63DDC /* UITextField+Emoji.m in Sources */,
+				4A17B18E2255A10A00B63DDC /* AMTextField.m in Sources */,
 				4ACC9F0E2251FAE100F2F508 /* UIView+Color.m in Sources */,
 				4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */,
 				4AEE354D2243332600FE54DE /* ViewController.m in Sources */,
 				4AEE3563224365B400FE54DE /* AMContainer.m in Sources */,
 				4AEE35582243332900FE54DE /* main.m in Sources */,
+				4A17B18B22559B1B00B63DDC /* NSString+Emoji.m in Sources */,
 				4A15EC582248AA3B008C70EC /* AMPerRealTimeDataCell.m in Sources */,
 				4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */,
 				4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */,

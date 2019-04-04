@@ -10,5 +10,7 @@ target 'NormalProject' do
      
      pod 'AAChartKit', '~> 2.1.6'
      
+     pod 'Aspects', '~> 1.4.1'
+     
 end
 

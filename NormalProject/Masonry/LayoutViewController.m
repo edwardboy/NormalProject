@@ -10,6 +10,8 @@
 #import <Masonry/Masonry.h>
 #import "UIView+Color.h"
 
+
+
 #import <AVKit/AVKit.h>
 
 @interface LayoutViewController ()
@@ -54,6 +56,9 @@
     self.player = [	AVPlayer playerWithURL:[NSURL URLWithString:fileUrl]];
     
 }
+
+
+
 
 //- (void)injected
 //{

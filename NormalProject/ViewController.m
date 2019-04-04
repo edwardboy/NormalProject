@@ -11,6 +11,9 @@
 #import "AMParam.h"
 #import "AMContainer.h"
 
+#import "AMTextDelegate.h"
+
+
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @interface ViewController ()
@@ -24,9 +27,18 @@
 
 @property (nonatomic,strong) RACSubject *loginSuccessSubject;
 
+@property (nonatomic,strong) AMTextDelegate *textDelegate;
+
 @end
 
 @implementation ViewController
+
+- (AMTextDelegate *)textDelegate{
+    if (!_textDelegate) {
+        _textDelegate = [[AMTextDelegate alloc] initWithRuleType:AMTextRuleTypePureNum];
+    }
+    return _textDelegate;
+}
 
 /** 登录成功回调*/
 - (RACSubject *)loginSuccessSubject{
@@ -63,6 +75,7 @@
     self.userNameTxf = [[UITextField alloc] init];
     self.userNameTxf.borderStyle = UITextBorderStyleRoundedRect;
     self.userNameTxf.placeholder = @"UserName";
+    self.userNameTxf.delegate = self.textDelegate;
     self.userNameTxf.frame = CGRectMake(margin, margin+y, width - margin*2, height);
     [self.view addSubview:self.userNameTxf];
     

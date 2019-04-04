@@ -11,17 +11,14 @@
 typedef NS_ENUM(NSInteger,AMTextRuleType) {
     AMTextRuleTypePureText,
     AMTextRuleTypePureNum,
+    AMTextRuleTypeWithoutEmoji,
 };
-
-@protocol AMTextProtocol <UITextFieldDelegate,UITextViewDelegate>
-
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField types:(AMTextRuleType)type;
-
-@end
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AMTextDelegate : NSObject
+@interface AMTextDelegate : NSObject<UITextFieldDelegate>
+
+- (instancetype)initWithRuleType:(AMTextRuleType)ruleType;
 
 @end
 

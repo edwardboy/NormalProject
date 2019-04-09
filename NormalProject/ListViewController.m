@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _contents = @[@"ViewController",@"LayoutViewController"];
+    _contents = @[@"ViewController",@"LayoutViewController",@"ChartViewController"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     

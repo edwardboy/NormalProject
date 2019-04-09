@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A14C252225CA88100CCB39C /* JHChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C24E225CA88100CCB39C /* JHChart.m */; };
+		4A14C253225CA88100CCB39C /* JHRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C251225CA88100CCB39C /* JHRingChart.m */; };
+		4A14C256225CA8BF00CCB39C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C255225CA8BF00CCB39C /* ChartViewController.m */; };
 		4A15EC4E2248A38F008C70EC /* AMDataCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */; };
 		4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */; };
 		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
@@ -33,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A14C24E225CA88100CCB39C /* JHChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChart.m; sourceTree = "<group>"; };
+		4A14C24F225CA88100CCB39C /* JHChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChart.h; sourceTree = "<group>"; };
+		4A14C250225CA88100CCB39C /* JHRingChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRingChart.h; sourceTree = "<group>"; };
+		4A14C251225CA88100CCB39C /* JHRingChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRingChart.m; sourceTree = "<group>"; };
+		4A14C254225CA8BF00CCB39C /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		4A14C255225CA8BF00CCB39C /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		4A15EC4C2248A38F008C70EC /* AMDataCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterController.h; sourceTree = "<group>"; };
 		4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMDataCenterController.m; sourceTree = "<group>"; };
 		4A15EC502248A455008C70EC /* AMDataCenterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterViewModel.h; sourceTree = "<group>"; };
@@ -97,6 +106,19 @@
 				4E45CFF3A568456226407397 /* Pods_NormalProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A14C24A225CA7E700CCB39C /* PieView */ = {
+			isa = PBXGroup;
+			children = (
+				4A14C24F225CA88100CCB39C /* JHChart.h */,
+				4A14C24E225CA88100CCB39C /* JHChart.m */,
+				4A14C250225CA88100CCB39C /* JHRingChart.h */,
+				4A14C251225CA88100CCB39C /* JHRingChart.m */,
+				4A14C254225CA8BF00CCB39C /* ChartViewController.h */,
+				4A14C255225CA8BF00CCB39C /* ChartViewController.m */,
+			);
+			path = PieView;
 			sourceTree = "<group>";
 		};
 		4A15EC482248A34D008C70EC /* DataCenter */ = {
@@ -204,6 +226,7 @@
 		4AEE35472243332600FE54DE /* NormalProject */ = {
 			isa = PBXGroup;
 			children = (
+				4A14C24A225CA7E700CCB39C /* PieView */,
 				4A1859742254BFB900379447 /* AMTextDelegate */,
 				4ADAC244224F180E00820801 /* Masonry */,
 				4AEB28322245CC4B00FCD6E5 /* CTMediator */,
@@ -373,7 +396,9 @@
 				4A17B18E2255A10A00B63DDC /* AMTextField.m in Sources */,
 				4ACC9F0E2251FAE100F2F508 /* UIView+Color.m in Sources */,
 				4ADAC24D224F1BD400820801 /* LayoutViewController.m in Sources */,
+				4A14C253225CA88100CCB39C /* JHRingChart.m in Sources */,
 				4AEE354D2243332600FE54DE /* ViewController.m in Sources */,
+				4A14C256225CA8BF00CCB39C /* ChartViewController.m in Sources */,
 				4AEE3563224365B400FE54DE /* AMContainer.m in Sources */,
 				4AEE35582243332900FE54DE /* main.m in Sources */,
 				4A17B18B22559B1B00B63DDC /* NSString+Emoji.m in Sources */,
@@ -381,6 +406,7 @@
 				4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */,
 				4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */,
 				4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */,
+				4A14C252225CA88100CCB39C /* JHChart.m in Sources */,
 				4A18597A2254C07000379447 /* AMTextDelegate.m in Sources */,
 				4AEE35602243335900FE54DE /* AMParam.m in Sources */,
 			);

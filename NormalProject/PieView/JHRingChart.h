@@ -13,7 +13,7 @@
 /**
  *  titles of all items
  */
-@property (nonatomic,strong) NSArray *items;
+@property (nonatomic,strong) NSArray <NSString *> *items;
 
 
 /**
@@ -33,5 +33,8 @@
  */
 @property (nonatomic, assign) CGFloat ringWidth;
 
+/**
+ *  Ring Chart title
+ */
 @property (nonatomic, copy) NSString *title;
 @end

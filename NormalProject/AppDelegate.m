@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ListViewController.h"
 
+//#import "XdEmojiFilter.h"
+
 @interface AppDelegate ()
 
 @end
@@ -23,7 +25,13 @@
     
     [self injection];
     
+    [self setupTextEmoji];
+    
     return YES;
+}
+
+- (void)setupTextEmoji{
+//    [XdEmojiFilter setEmojiFilterEnable:YES];
 }
 
 - (void)injection{

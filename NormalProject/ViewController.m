@@ -67,19 +67,19 @@
  */
 - (void)testReactiveObjc{
     
-    CGFloat y = 50;
+    CGFloat y = 90;
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = 40.f;
     CGFloat margin = 30;
     
-    self.userNameTxf = [[UITextField alloc] init];
+    self.userNameTxf = [[UITextField alloc] initWithFrame:CGRectZero];
     self.userNameTxf.borderStyle = UITextBorderStyleRoundedRect;
     self.userNameTxf.placeholder = @"UserName";
     self.userNameTxf.delegate = self.textDelegate;
     self.userNameTxf.frame = CGRectMake(margin, margin+y, width - margin*2, height);
     [self.view addSubview:self.userNameTxf];
     
-    self.passwordTxf = [[UITextField alloc] init];
+    self.passwordTxf = [[UITextField alloc] initWithFrame:CGRectZero];
     self.passwordTxf.borderStyle = UITextBorderStyleRoundedRect;
     self.passwordTxf.placeholder = @"Password";
     self.passwordTxf.frame = CGRectMake(margin, margin+(margin+height)+y, width - margin*2, height);

@@ -8,7 +8,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
 #define P_M(x,y) CGPointMake(x, y)
 

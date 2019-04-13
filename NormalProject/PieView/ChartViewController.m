@@ -8,8 +8,7 @@
 
 #import "ChartViewController.h"
 #import "JHRingChart.h"
-//#import
-//#import "NSArray+C"
+#import "UIImage+Category.h"
 
 @interface ChartViewController ()
 
@@ -22,24 +21,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupView];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testNullSafe];
+//    [self setupView];
+    
+//    [self testNullSafe];
+
+    [self testArray];
+}
+
+- (void)testArray{
+    
+    NSArray *contents = @[@"123",@"345",@"567"];
+    NSArray *content1 = @[@"123"];
+    NSArray *content2 = @[];
+    
+    NSString *obj = [contents objectAtIndex:3];
+
+    NSLog(@"obj：%@，contents:%@,content1:%@,content2:%@",obj,contents,content1,content2);
 }
 
 - (void)testNullSafe{
+    
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setObject:[NSNull null] forKey:@"123"];
     NSLog(@"dic:%@",dic);
+
     
-    NSArray *a = @[@"3",@"2",@"1"];
-    NSString *str = [a objectAtIndex:3];
-    NSLog(@"indexObject:%@",str);
+    NSString *imgPath = @"https://resource.amez999.com/goods/profile/shop/257/2019/01/15/NnJZNzYBNe.png";
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgPath]];
+        UIImage *img = [UIImage imageWithData:imgData];
+        NSLog(@"Memory Size:%@",[img memoryBitSize]); // 输出 2910720
+    });
+    
 }
 
 - (void)setupView{
-    
-    self.view.backgroundColor = [UIColor whiteColor];
     
     JHRingChart *ring = [[JHRingChart alloc] initWithFrame:CGRectMake(0, 88, k_MainBoundsWidth, 231)];
     /*        background color         */

@@ -9,7 +9,7 @@
 #import "LayoutViewController.h"
 #import <Masonry/Masonry.h>
 #import "UIView+Color.h"
-
+#import "Animal.h"
 
 
 #import <AVKit/AVKit.h>
@@ -25,6 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Animal *animal1 = [[Animal alloc] init];
+    animal1.name = @"123";
+    Animal *animal2 = animal1.mutableCopy;
+    NSLog(@"name:%@",animal2.name);
+    
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -54,6 +60,14 @@
 - (void)playVideo{
     NSString *fileUrl = @"";
     self.player = [	AVPlayer playerWithURL:[NSURL URLWithString:fileUrl]];
+    
+//    @try {
+//
+//    } @catch (NSException *exception) {
+//
+//    } @finally {
+//
+//    }
     
 }
 

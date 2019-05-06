@@ -29,12 +29,12 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector){
     NSLog(@"--%s--",__func__);
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        @autoreleasepool {
-            swizzleMethod(NSClassFromString(@"__NSSingleObjectArrayI"), @selector(objectAtIndex:), @selector(singleObjectArrayIObjectAtIndex:));
-            swizzleMethod(NSClassFromString(@"__NSArrayI"), @selector(objectAtIndex:), @selector(arrayIObjectAtIndex:));
-            swizzleMethod(NSClassFromString(@"__NSArray0"), @selector(objectAtIndex:), @selector(array0ObjectAtIndex:));
-            swizzleMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:), @selector(arrayMObjectAtIndex:));
-        }
+//        @autoreleasepool {
+//            swizzleMethod(NSClassFromString(@"__NSSingleObjectArrayI"), @selector(objectAtIndex:), @selector(singleObjectArrayIObjectAtIndex:));
+//            swizzleMethod(NSClassFromString(@"__NSArrayI"), @selector(objectAtIndex:), @selector(arrayIObjectAtIndex:));
+//            swizzleMethod(NSClassFromString(@"__NSArray0"), @selector(objectAtIndex:), @selector(array0ObjectAtIndex:));
+//            swizzleMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:), @selector(arrayMObjectAtIndex:));
+//        }
     });
 }
 

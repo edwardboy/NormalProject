@@ -10,6 +10,7 @@
 		4A14C252225CA88100CCB39C /* JHChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C24E225CA88100CCB39C /* JHChart.m */; };
 		4A14C253225CA88100CCB39C /* JHRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C251225CA88100CCB39C /* JHRingChart.m */; };
 		4A14C256225CA8BF00CCB39C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14C255225CA8BF00CCB39C /* ChartViewController.m */; };
+		4A153EFC22803A9B000E20F0 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A153EFB22803A9B000E20F0 /* Animal.m */; };
 		4A15EC4E2248A38F008C70EC /* AMDataCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */; };
 		4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC512248A455008C70EC /* AMDataCenterViewModel.m */; };
 		4A15EC552248A5F3008C70EC /* AMRealtimeDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A15EC542248A5F3008C70EC /* AMRealtimeDataCell.m */; };
@@ -46,6 +47,8 @@
 		4A14C251225CA88100CCB39C /* JHRingChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRingChart.m; sourceTree = "<group>"; };
 		4A14C254225CA8BF00CCB39C /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
 		4A14C255225CA8BF00CCB39C /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		4A153EFA22803A9B000E20F0 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		4A153EFB22803A9B000E20F0 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		4A15EC4C2248A38F008C70EC /* AMDataCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterController.h; sourceTree = "<group>"; };
 		4A15EC4D2248A38F008C70EC /* AMDataCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMDataCenterController.m; sourceTree = "<group>"; };
 		4A15EC502248A455008C70EC /* AMDataCenterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMDataCenterViewModel.h; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 				4AEE354C2243332600FE54DE /* ViewController.m */,
 				4ADAC248224F19D600820801 /* ListViewController.h */,
 				4ADAC249224F19D600820801 /* ListViewController.m */,
+				4A153EFA22803A9B000E20F0 /* Animal.h */,
+				4A153EFB22803A9B000E20F0 /* Animal.m */,
 				4AEE354E2243332600FE54DE /* Main.storyboard */,
 				4AEE35512243332900FE54DE /* Assets.xcassets */,
 				4AEE35532243332900FE54DE /* LaunchScreen.storyboard */,
@@ -433,6 +438,7 @@
 				4AEB28382245CCBD00FCD6E5 /* CTMediator+Category.m in Sources */,
 				4AEE354A2243332600FE54DE /* AppDelegate.m in Sources */,
 				4A15EC522248A455008C70EC /* AMDataCenterViewModel.m in Sources */,
+				4A153EFC22803A9B000E20F0 /* Animal.m in Sources */,
 				4A14C252225CA88100CCB39C /* JHChart.m in Sources */,
 				4A18597A2254C07000379447 /* AMTextDelegate.m in Sources */,
 				4A9F67FE225F3E6600BF3F2A /* NSArray+Category.m in Sources */,

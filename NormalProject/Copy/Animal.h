@@ -1,8 +1,8 @@
 //
-//  NSString+Category.h
+//  Animal.h
 //  NormalProject
 //
-//  Created by gyh on 2019/4/13.
+//  Created by gyh on 2019/5/7.
 //  Copyright © 2019 gyh. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (Category)
+@interface Animal : NSObject<NSCopying,NSMutableCopying>
 
-+ (NSString *)memoryOfBitSize:(NSInteger)size;
+@property (nonatomic,copy) NSString *name;
 
 @end
 

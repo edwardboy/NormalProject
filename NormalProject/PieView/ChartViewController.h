@@ -3,7 +3,7 @@
 //  NormalProject
 //
 //  Created by gyh on 2019/4/9.
-//  Copyright © 2019 李宁锋. All rights reserved.
+//  Copyright © 2019 gyh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
